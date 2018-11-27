@@ -23,21 +23,21 @@ import Layout from '../views/layout/Layout'
 **/
 
 export const constantRouterMap = [
-  // { path: '/login', component: () => import('@/views/login/index'), hidden:true },
+  { path: '/login', component: () => import('@/views/login/index'), hidden: true },
   // Dashboard part
-  // {
-  //   path: '/dashboard',
-  //   component: Layout,
-  //   redirect: '/dashboard',
-  //   name: 'Dashboard',
-  //   hidden: true,
-  //   children: [
-  //     {
-  //       path: '',
-  //       component: () => import('@/views/dashboard/index')
-  //     }
-  //   ]
-  // },
+  {
+    path: '/dashboard',
+    component: Layout,
+    redirect: '/dashboard',
+    name: 'Dashboard',
+    hidden: true,
+    children: [
+      {
+        path: '',
+        component: () => import('@/views/dashboard/index')
+      }
+    ]
+  },
   // Side Bar
   {
     path: '/',

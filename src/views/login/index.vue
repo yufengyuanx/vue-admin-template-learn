@@ -89,13 +89,13 @@ export default {
     handleLogin() {
       this.$refs.loginForm.validate(valid => {
         // if (valid) {
-          this.loading = true
-          this.$store.dispatch('Login', this.loginForm).then(() => {
-            this.loading = false
-            this.$router.push({ path: this.redirect || '/' })
-          }).catch(() => {
-            this.loading = false
-          })
+        this.loading = true
+        this.$store.dispatch('Login', this.loginForm).then(() => {
+          this.loading = false
+          this.$router.push({ path: this.redirect || '/' })
+        }).catch(() => {
+          this.loading = false
+        })
         // } else {
         //   console.log('error submit!!')
         //   return false
@@ -177,9 +177,8 @@ $light_gray:#eee;
   }
   .title {
     font-size: 26px;
-    font-weight: 400;
     color: $light_gray;
-    margin: 0px auto 40px auto;
+    margin: 0 auto 40px auto;
     text-align: center;
     font-weight: bold;
   }
