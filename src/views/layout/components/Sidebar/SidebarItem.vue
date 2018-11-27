@@ -1,3 +1,4 @@
+<!-- SidebarItem 包括两个子组件 Item 和 Link -->
 <template>
   <div v-if="!item.hidden&&item.children" class="menu-wrapper">
 

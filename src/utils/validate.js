@@ -2,9 +2,11 @@
  * Created by jiachenpan on 16/11/18.
  */
 
+/* 合法用户名 @datayes.com*/
 export function isvalidUsername(str) {
   const valid_map = ['admin', 'editor']
-  return valid_map.indexOf(str.trim()) >= 0
+  const username = str.split('@')
+  return valid_map.indexOf(str.trim()) >= 0 || (username.size() === 2 && username[1] === 'datayes.com')
 }
 
 /* 合法uri*/

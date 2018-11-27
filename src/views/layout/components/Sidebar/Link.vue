@@ -10,6 +10,7 @@
 import { isExternal } from '@/utils'
 
 export default {
+  // to 就是链接地址
   props: {
     to: {
       type: String,
@@ -17,6 +18,7 @@ export default {
     }
   },
   methods: {
+    // 是否为外部链接， 外部链接就打开新页面，内部页面就直接到
     isExternalLink(routePath) {
       return isExternal(routePath)
     },

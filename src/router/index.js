@@ -51,7 +51,11 @@ export const constantRouterMap = [
         path: 'job/list',
         name: 'etljob',
         component: () => import('@/views/table/job'),
-        meta: { title: '任务列表', icon: 'table' }
+        meta:
+        {
+          title: '任务列表',
+          icon: 'table'
+        }
       },
       {
         path: 'job/history',
@@ -85,12 +89,11 @@ export const constantRouterMap = [
       {
         path: 'table2',
         name: 'Table2',
-        mponent: () => import('@/views/table/job'),
+        component: () => import('@/views/table/job'),
         meta: { title: '引擎状态', icon: 'table' }
       }
     ]
   },
-
   { path: '/404', component: () => import('@/views/404'), hidden: true },
   { path: '*', redirect: '/404', hidden: true }
 ]

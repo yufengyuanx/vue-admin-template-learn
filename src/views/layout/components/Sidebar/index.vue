@@ -1,3 +1,4 @@
+<!-- index 组件 定义了menu, 子组件 SidebarItem -->
 <template>
   <el-scrollbar wrap-class="scrollbar-wrapper">
     <el-menu

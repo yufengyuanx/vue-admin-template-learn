@@ -57,11 +57,11 @@
     <el-dialog :title="textMap[dialogStatus]" :visible.sync="dialogFormVisible">
       <el-form ref="dataForm" label-position="left" label-width="70px" style="width: 400px; margin-left:50px;">
 
-        <el-form-item :label="createUserLableMap.username">
+        <el-form-item :label="createUserLabelMap.username">
           <el-input v-model="temp.username" label="username"/>
         </el-form-item>
 
-        <el-form-item :label="createUserLableMap.role">
+        <el-form-item :label="createUserLabelMap.role">
           <el-select v-model="temp.role" class="filter-item" placeholder="Please select">
             <el-option v-for="item in roleOptions" :key="item" :label="item" :value="item"/>
           </el-select>
@@ -92,7 +92,7 @@ export default {
         role: '',
         apartment: ''
       },
-      createUserLableMap: {
+      createUserLabelMap: {
         username: '用户名',
         role: '角色'
       },
