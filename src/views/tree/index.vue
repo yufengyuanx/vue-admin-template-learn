@@ -1,6 +1,6 @@
 <template>
   <div class="app-container">
-    <el-input v-model="filterText" placeholder="Filter keyword" style="margin-bottom:30px;" />
+    <el-input v-model="filterText" placeholder="Filter keyword" style="margin-bottom:30px;"/>
 
     <el-tree
       ref="tree2"
@@ -69,7 +69,9 @@ export default {
 
   methods: {
     filterNode(value, data) {
-      if (!value) return true
+      if (!value) {
+        return true
+      }
       return data.label.indexOf(value) !== -1
     }
   }

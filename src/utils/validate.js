@@ -6,7 +6,8 @@
 export function isvalidUsername(str) {
   const valid_map = ['admin', 'editor']
   const username = str.split('@')
-  return valid_map.indexOf(str.trim()) >= 0 || (username.size() === 2 && username[1] === 'datayes.com')
+  return valid_map.indexOf(str.trim()) >= 0 || (username[1] === 'datayes.com' &&
+    username.length === 2)
 }
 
 /* 合法uri*/

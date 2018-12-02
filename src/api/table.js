@@ -8,16 +8,26 @@ export function getJobList(params) {
   })
 }
 
-export function getUserList() {
+export function getUserList(params) {
   return request({
     url: '/user/list',
-    method: 'get'
+    method: 'get',
+    params
   })
 }
 
-export function getDbInfoList() {
+export function getDbInfoList(params) {
   return request({
-    url: '/dbInfo/list',
-    method: 'get'
+    url: '/dbinfo/list',
+    method: 'get',
+    params
+  })
+}
+
+export function getHistoryList(params) {
+  return request({
+    url: '/taskresult/list',
+    method: 'get',
+    params
   })
 }
